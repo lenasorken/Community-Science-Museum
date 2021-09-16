@@ -54,10 +54,9 @@ nav a:hover {
 
 .background {
     background-image: url(../Community-Science-Museum/images/jesse-orrico-60373.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 50% auto;
 }
+
+
 
 
 
@@ -72,24 +71,15 @@ nav a:hover {
     margin: 5px;
 }
 
-@media screen and (max-width: 1024px)  {
-    .navigation_links {
-        width: 50%;
-    }
+.pageimg {
+    width: 100%;
 }
 
+.shortened {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-@media screen and (max-width: 768px) {
-        .navigation_links {
-            position: absolute
-            right 0px;
-            height: 92vh;
-            top: 8vh;
-            background-color: #F7F7F7;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 50%;
-        }
-    }
-
+.headerimg {
+    background-image: url(../Community-Science-Museum/images/learn-2405206_1920.jpg) ;
+}
