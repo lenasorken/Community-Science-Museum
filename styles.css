@@ -17,16 +17,31 @@ nav {
   
 }
 nav a:hover {
-    color:darkgreen
+    color: grey;
+    text-decoration: underline;
 }
 
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo_text a:hover {
+    text-decoration: none;
+    color: #000000;
+}
 
 .logo_text {
     color: #000000;
     letter-spacing: 1px;
     font-size: 25px;
     font-weight: bold;
-
+    margin-right: 450px;
 }
 
 .logo {
@@ -53,11 +68,9 @@ nav a:hover {
 
 
 .background {
-    background-image: url(../Community-Science-Museum/images/jesse-orrico-60373.jpg);
+    background-color: #000000;
+    text-align: bottom;
 }
-
-
-
 
 
 .hamburger_bar {
@@ -76,10 +89,71 @@ nav a:hover {
 }
 
 .shortened {
-    max-width: 600px;
-    margin: 0 auto;
+    
+    max-width: 800px;
+    margin: auto;
+    margin-left: 366px;
+    margin-top: 100px;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 230%;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.headerimg {
-    background-image: url(../Community-Science-Museum/images/learn-2405206_1920.jpg) ;
+.shortened2 {
+    max-width: 700px;
+    margin-left: 200px;
+    margin-top: 80px;
+    font-size: 1em;
+    line-height: 230%;
 }
+
+.explorerheaderimg {
+    background-image: url(/images/png/learn-2405206_1920.png);
+    max-width: 1920px;
+    height: 310px;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-top: 0;   
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.headertext {
+    color: #000000;
+    position: absolute;
+    bottom: 670px;
+    left: 200px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+.indexbackground {
+    background-image: url(images/png/jesse-orrico-60373.png);
+    display: flex;
+    width: 1879px;
+    height: 859px;
+    margin: auto;
+    background-size: cover;
+}
+
+background-image: url(images/png/jesse-orrico-60373.png);
+background-size: cover;
+background-repeat: no-repeat;
+width: 1900px;
+height: 850px;
+position: absolute;  
+
+
+
+
+
+
+left: 0px;
+font-size: 1.6em;
+color: #F7F7F7;
+text-decoration: underline;
+opacity: 50%;
