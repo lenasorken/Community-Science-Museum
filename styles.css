@@ -108,8 +108,7 @@ a:visited {
     line-height: 230%;
 }
 
-.explorerheaderimg {
-    background-image: url(/images/png/learn-2405206_1920.png);
+.headerimg {
     max-width: 1920px;
     height: 310px;
     width: auto;
@@ -118,7 +117,26 @@ a:visited {
     margin-top: 0;   
     background-attachment: fixed;
     background-position: center top;
+    opacity: 50%;
 }
+
+.exploreheaderimg {
+    background-image: url(/images/png/learn-2405206_1920.png);
+}
+
+.exhibitionimg {
+    background-image: url(/images/png/skeleton-414543_1920.png);
+}
+.specialeventsimg {
+
+}    
+.visitimg {
+
+}
+.getinvolvedimg {
+
+}
+
 
 .headertext {
     color: #000000;
