@@ -109,32 +109,61 @@ a:visited {
 }
 
 .headerimg {
-    max-width: 1920px;
-    height: 310px;
-    width: auto;
-    background-repeat: no-repeat;
-    margin-left: 0;
-    margin-top: 0;   
-    background-attachment: fixed;
-    background-position: center top;
     opacity: 50%;
+    
 }
 
 .exploreheaderimg {
     background-image: url(/images/png/learn-2405206_1920.png);
+    height: 310px;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-top: 0;
+    background-attachment: fixed;
+    background-position: center top;
+    
 }
 
-.exhibitionimg {
+.exhibitionheaderimg {
     background-image: url(/images/png/skeleton-414543_1920.png);
+    height: 310px;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-top: 0;
+    background-attachment: fixed;
+    background-position: center top;
 }
-.specialeventsimg {
-
+.specialeventsheaderimg {
+    background-image: url(../Community-Science-Museum/images/png/billetto-editorial-334686.png);
+    height: 310px;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-top: 0;
+    background-attachment: fixed;
+    background-position: center top;
 }    
-.visitimg {
-
+.visitheaderimg {
+    background-image: url(../Community-Science-Museum/images/png/william-bout-264826.png);
+    height: 310px;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-top: 0;
+    background-attachment: fixed;
+    background-position: center top;
 }
-.getinvolvedimg {
-
+.getinvolvedheaderimg {
+    background-image: url(../Community-Science-Museum/images/png/scientific-2040795_1280.png);
+    height: 310px;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-top: 0;
+    background-attachment: fixed;
+    background-position: center top;
 }
 
 
@@ -151,12 +180,41 @@ a:visited {
 
 .indexbackground {
     background-image: url(images/png/jesse-orrico-60373.png);
-    display: flex;
-    width: 1879px;
-    height: 859px;
-    margin: auto;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    min-height: 92vh;
+    min-width: 200vh;
+    position: absolute;
+    opacity: 70%;
 }
+
+.mammoth {
+    display: grid;
+    width: 45%;
+    float: right;
+    margin: 50px auto;
+    padding: 10px 70px;
+
+    
+}
+
+.current {
+    text-decoration:solid;
+    text-decoration: underline;
+}
+
+/*
+
+CSS Kode
+
+left: 0px;
+font-size: 1.6em;
+color: #F7F7F7;
+text-decoration: underline;
+opacity: 50%;
+
 
 background-image: url(images/png/jesse-orrico-60373.png);
 background-size: cover;
@@ -165,13 +223,4 @@ width: 1900px;
 height: 850px;
 position: absolute;  
 
-
-
-
-
-
-left: 0px;
-font-size: 1.6em;
-color: #F7F7F7;
-text-decoration: underline;
-opacity: 50%;
+*/
