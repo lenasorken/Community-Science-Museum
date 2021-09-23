@@ -60,18 +60,17 @@ a:visited {
     list-style: none;
 }
 
-.navigation_links a {
+.navigation_links p {
     color: #000000;
     text-decoration: none;
     font-size: 19px;
 }
 
-
-.background {
-    background-color: #000000;
-    text-align: bottom;
+.navigation_links h5 {
+    color: #3a3a3a;
+    text-decoration: solid;
+    font-size: 21px;
 }
-
 
 .hamburger_bar {
  display: none;
@@ -89,7 +88,6 @@ a:visited {
 }
 
 .shortened {
-    
     max-width: 800px;
     margin: auto;
     margin-left: 366px;
@@ -108,13 +106,36 @@ a:visited {
     line-height: 230%;
 }
 
-.headerimg {
-    opacity: 50%;
-    
+/* -----Explore CSS----- */
+
+.explore_text {
+    max-width: 700px;
+    margin-left: 200px;
+    margin-top: 90px;
+    font-size: 1em;
+    line-height: 230%;
+}
+
+.shortenedexplore {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mammoth {
+    vertical-align: top;
+    max-width: 50%;
+    max-height: 30%;
+    padding: 20px 60px;
+    opacity: 85%;
+}
+
+.shortenedexplore > .explore_text {
+    flex: 2 0 0%;
+    margin: auto;
 }
 
 .exploreheaderimg {
-    background-image: url(/images/png/learn-2405206_1920.png);
+    background-image: url(/images/learn-2405206_1920.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -122,11 +143,47 @@ a:visited {
     margin-top: 0;
     background-attachment: fixed;
     background-position: center top;
-    
+    opacity: 50%;
+}
+
+/* -----Exhibition CSS----- */
+
+.exhibitiontext {
+    max-width: 700px;
+    margin-left: 200px;
+    margin-top: 90px;
+    font-size: 1em;
+    line-height: 230%;
+}
+
+.shortened_exhibition {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.shortened_exhibition {
+    flex: 1 0 0%;
+    text-align: left
+}
+
+.heart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 50%;
+    max-width: 50%;
+    padding: 20px 60px;
+    opacity: 80%;
+}
+
+.shortened_exhibition > .exhibitiontext {
+    flex: 2 0 0%;
+    margin: auto;
 }
 
 .exhibitionheaderimg {
-    background-image: url(/images/png/skeleton-414543_1920.png);
+    background-image: url(/images/skeleton-414543_1920.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -134,9 +191,13 @@ a:visited {
     margin-top: 0;
     background-attachment: fixed;
     background-position: center top;
+    opacity: 50%;
 }
+
+/* -----Special Events ----- */
+
 .specialeventsheaderimg {
-    background-image: url(../Community-Science-Museum/images/png/billetto-editorial-334686.png);
+    background-image: url(images/billetto-editorial-334686\ -\ Copy.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -144,19 +205,59 @@ a:visited {
     margin-top: 0;
     background-attachment: fixed;
     background-position: center top;
-}    
-.visitheaderimg {
-    background-image: url(../Community-Science-Museum/images/png/william-bout-264826.png);
-    height: 310px;
-    width: auto;
-    background-repeat: no-repeat;
-    margin-left: 0;
-    margin-top: 0;
-    background-attachment: fixed;
-    background-position: center top;
+    opacity: 50%;
 }
-.getinvolvedheaderimg {
-    background-image: url(../Community-Science-Museum/images/png/scientific-2040795_1280.png);
+
+.specialevents_text {
+    max-width: 700px;
+    margin-left: 200px;
+    margin-top: 90px;
+    font-size: 1em;
+    line-height: 230%;
+}
+
+.organer {
+    vertical-align: top;
+    max-width: 40%;
+    height: auto;
+    padding: 105px 50px;
+    opacity: 85%;
+}
+.shortened_specialevents {
+    display: flex;
+    flex-direction: row;
+}
+    
+/* -----Visit CSS----- */
+
+.visit_text {
+    max-width: 700px;
+    margin-left: 200px;
+    margin-top: 90px;
+    font-size: 1em;
+    line-height: 230%;
+}
+
+.shortened_visit {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.libraryimg {
+    vertical-align: top;
+    max-width: 60%;
+    height: auto;
+    padding: 20px 60px;
+    opacity: 85%;
+}
+
+.shortened_visit > .visit_text {
+    flex: 2 0 0%;
+    margin: auto;
+}
+
+.visitheaderimg {
+    background-image: url(images/william-bout-264826_2.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -164,6 +265,47 @@ a:visited {
     margin-top: 0;
     background-attachment: fixed;
     background-position: center top;
+    opacity: 50%;
+}
+
+/* -----Get Involved CSS----- */
+
+.involved_text {
+    max-width: 700px;
+    margin-left: 200px;
+    margin-top: 90px;
+    font-size: 1em;
+    line-height: 230%;
+}
+
+.shortened_involved {
+    display: flex;
+    flex-direction: row;
+}
+
+.involvedimg {
+    vertical-align: top;
+    max-width: 50%;
+    height: auto;
+    padding: 20px 60px;
+    opacity: 85%
+}
+
+.shortened_involved > .involved_text {
+    flex: 2 0 0%;
+    margin: auto;
+}
+
+.getinvolvedheaderimg {
+    background-image: url(images/scientific-2040795_1280_2.png);
+    height: 310px;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-top: 0;
+    background-attachment: fixed;
+    background-position: center top;
+    opacity: 50%;
 }
 
 
@@ -174,12 +316,14 @@ a:visited {
     left: 200px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+    text-decoration: solid;
     
 }
 
+/* -----Index-----
 
-.indexbackground {
-    background-image: url(images/png/jesse-orrico-60373.png);
+.background {
+    background-image: url(images/jesse-orrico-60373.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -187,23 +331,46 @@ a:visited {
     min-height: 92vh;
     min-width: 200vh;
     position: absolute;
+    text-align: bottom;
     opacity: 70%;
 }
 
-.mammoth {
-    display: grid;
-    width: 45%;
-    float: right;
-    margin: 50px auto;
-    padding: 10px 70px;
-
-    
+.background img {
+    opacity: 70%;
 }
 
-.current {
-    text-decoration:solid;
-    text-decoration: underline;
+.shortend h1 {
+    opacity: 100%;
 }
+
+.shortend p {
+    opacity: 100%;
+}
+*/
+
+.background {
+    height: 100vh;
+}
+
+.indeximg {
+    height: 100vh;
+    background-image: url(/images/jesse-orrico-60373.png);
+    opacity: 70%;
+}
+
+.index_text {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    text-align: left;
+}
+
+
+
+
+
+
+
 
 /*
 
