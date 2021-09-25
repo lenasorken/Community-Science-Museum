@@ -1,0 +1,100 @@
+/* ---Navigation Bar--- */
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: #F7F7F7;
+        box-shadow: 0px 1px 7px grey; 
+    }
+
+    .logo_text {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    .logo {
+        height: auto;
+        width: auto;
+        left: 0;
+        top: 0;
+        margin-left: 320px;
+    }
+    
+    .navigation_links {
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        font-size: 10px;
+        margin-left: 150px;
+    }
+    
+    .navigation_links li {
+        list-style: none;
+    }
+    
+    .navigation_links p {
+        color: #000000;
+        text-decoration: none;
+        font-size: 19px;
+    }
+    
+    .navigation_links h5 {
+        color: #3a3a3a;
+        text-decoration: solid;
+        font-size: 21px;
+    }
+    
+}
+
+
+/* ---Index--- */
+/* --- generelle telefonsize, blant annet iphone 5 / SE  --- */
+
+@media only screen and (max-width: 600px) {
+    .background {
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 800px;
+    }
+    
+    .index_text {
+        font-size: 10px;
+        max-width: 300px;
+    }
+    .indexfooter {
+        height: 10px;
+        font-size: 10px;
+        bottom: auto;
+        left: auto;
+        background-color: #F7F7F7;
+    }
+}
+
+/* --- høyere telefoner, iphone 6 Plus,7 Plus,8 Plus, Plus X, Pixel 2 Pixel 2 XL, Surface Duo--- */
+@media only screen and (min-height: 600px) and (max-height: 850px) {
+    .background {
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 800px;
+    }
+    
+    .index_text {
+        font-size: 16px;
+        max-width: 370px;
+    }
+    .indexfooter {
+        height: 10px;
+        font-size: 14px;
+        bottom: auto;
+        left: auto;
+        background-color: #F7F7F7;
+    }
+}
+
+
+
