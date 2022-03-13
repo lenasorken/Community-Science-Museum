@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-</html>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
     <meta name="description" content="Community Science Museum is a community-driven museum where we're commited to making science accessible to all. We have special events and exhibitions for both kids and adults. " />
     <title>Community Science Museum | Special Events and Exhibitions</title>
-    <link href="/css/styles.css" rel="stylesheet" />
-    <link href="/css/special.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/special.css" rel="stylesheet" />
 
 </head>
 
@@ -17,29 +14,41 @@
     <header>
         <!---nav bar -->
         <nav>
-            <div class="navigation">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="../images/logo75px.png" alt="logo">
-                    </a>
-                </div>
-                <div class="logo_text">
-                    <a href="index.html">Community Science Museum</a>
-                </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo75px.png" alt="logo">
+                </a>
+            </div>
+            <div class="logo_text">
+                <a href="index.html">Community Science Museum</a>
+            </div>
 
-                <ul class="navigation_links">
-                    <li><a href="explore.html"><p>Explore</p></a> </li>
-                    <li><a href="exhibitionspaces.html"><p>Exhibition Spaces</p></a> </li>
-                    <li><a href="specialevents.html"></a><h5>Special Events</h5></a> </li>
-                    <li><a href="visit.html"><p>Visit</p></a> </li>
-                    <li><a href="get involved.html"><p>Get Involved</p></a> </li>
-                </ul>
+            <ul class="navigation_links">
+                <li><a href="explore.html">Explore</a> </li>
+                <li><a href="exhibitionspaces.html">Exhibition Spaces</a> </li>
+                <li><a href="specialevents.html">Special Events</a> </li>
+                <li><a href="visit.html">Visit</a> </li>
+                <li><a href="get involved.html">Get Involved</a> </li>
+            </ul>
+            <!--  Added Hamburger Menu
+                  Changes are visible during mobile view only
+                  Image is hidden with CSS when from 1200px width and upwards. -->
+            <div class="mobile-nav">
+                <img src="images/hamburger.png" alt="hamburger" id="hamburger">
+                <div id="mobile-nav-links">
+                    <a href="explore.html">Explore</a>
+                    <a href="exhibitionspaces.html">Exhibition Spaces</a>
+                    <a href="specialevents.html">Special Events</a>
+                    <a href="visit.html">Visit</a>
+                    <a href="get involved.html">Get Involved</a>
+                </div>
             </div>
         </nav>
-        </div>
 
         <!---nav bar -->
-
+        <!--Removed unecessary code and made some global tags to avoid repeats
+        All <br> are removed and replaced with margin-top where the space is needed as stated in the feedback.
+        Some cleanup in code is also done.-->
     <div class="pageimg">
     </div>
 
@@ -52,29 +61,35 @@
         </div>
     </div>
     <section class="shortened_specialevents">
-        <img src="../images/samuel-zeller-113381.png" alt="samuelzeller" class="organer">
+        <img src="images/samuel-zeller-113381.png" alt="samuelzeller" class="organer">
         <div class="specialevents_text">
         <h2>News</h2>
-        <br>
+
         <h3>Visiting Professor of Aeronautics</h3>
-        <br>
+
         <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will
             be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting
             ‘space’.</p>
-        <br>
         <h3>Night in the Museum</h3>
-        <br>
+        
         <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science
             displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.
         </p>
-        <br>
+        
         <h3>Energetica Exhibition on Loan</h3>
-        <br>
+        
         <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community
             Science Museum. It’s a series of installations that allow visitors to experience the power of the elements
             as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able
             to use and control wind to create power.</p>
+
         </div>
         </section>
+    <footer>
+        Copyright &copy; Community Science Museum
+    </footer>
+    <script src="script.js"></script>
 </body>
-<footer>Copyright &copy; Community Science Museum</footer>
+<!--Moved </html> to it's proper position and moved footer into the Body tag, 
+    in the first delivery the tag was on the outside of the Body tag -->
+</html>

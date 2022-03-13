@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-</html>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
     <meta name="description" content="Community Science Museum is a community-driven museum where we're commited to making science accessible to all. We have over 1000 exhibits with varied subjects, and we want to create a space where everyone can experience discoveries of the world around us. " />
     <title>Community Science Museum | Home</title>
-    <link href="/css/styles.css" rel="stylesheet" />
-    <link href="/css/index.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
 
 </head>
 
@@ -18,44 +15,59 @@
 
         <!---nav bar -->
         <nav>
-            <div class="navigation">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="../images/logo75px.png" alt="logo">
-                    </a>
-                </div>
-                <div class="logo_text">
-                    <a href="index.html">Community Science Museum</a>
-                </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo75px.png" alt="logo">
+                </a>
+            </div>
+            <div class="logo_text">
+                <a href="index.html">Community Science Museum</a>
+            </div>
 
-                <ul class="navigation_links">
-                    <li><a href="explore.html">Explore</a> </li>
-                    <li><a href="exhibitionspaces.html">Exhibition Spaces</a> </li>
-                    <li><a href="specialevents.html">Special Events</a> </li>
-                    <li><a href="visit.html">Visit</a> </li>
-                    <li><a href="get involved.html">Get Involved</a> </li>
-                </ul>
+            <ul class="navigation_links">
+                <li><a href="explore.html">Explore</a> </li>
+                <li><a href="exhibitionspaces.html">Exhibition Spaces</a> </li>
+                <li><a href="specialevents.html">Special Events</a> </li>
+                <li><a href="visit.html">Visit</a> </li>
+                <li><a href="get involved.html">Get Involved</a> </li>
+            </ul>
+            <!--  Added Hamburger Menu
+                  Changes are visible during mobile view only
+                  Image is hidden with CSS when from 1200px width and upwards. -->
+            <div class="mobile-nav">
+                <img src="images/hamburger.png" alt="hamburger" id="hamburger">
+                <div id="mobile-nav-links">
+                    <a href="explore.html">Explore</a>
+                    <a href="exhibitionspaces.html">Exhibition Spaces</a>
+                    <a href="specialevents.html">Special Events</a>
+                    <a href="visit.html">Visit</a>
+                    <a href="get involved.html">Get Involved</a>
+                </div>
             </div>
         </nav>
     </header>
     <!---nav bar -->
 
+    <!--Removed unecessary code and made some global tags to avoid repeats
+        All <br> are removed and replaced with margin-top where the space is needed as stated in the feedback.
+        Some cleanup in code is also done.-->
+
     <div class="background">
         <div class="index_text">
             <h1>"Explore together"</h1>
-            <br>
-            <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-                <br>
-                <br>
+            <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
+            <p>
                 Over the course of human history, science has developed from our early understanding of fire, wind,
                 water, and earth to exploring everything from galaxies far away to the very building blocks of life
                 itself.
-                <br>
-                <br>
+            </p>
+
+            <p>
                 The aim of our museum is to create a space where everyone can experience the wonders of our discoveries
                 and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-                <br>
-                <br>
+            </p>
+
+            <p>
                 We believe science should not be confined to the textbook, but brought to live through exhibits. This is
                 why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of
                 these exhibits are designed for you to interact with and play around to see science come to life (apart
@@ -63,5 +75,11 @@
             </p>
         </div>
     </div>
+    <footer class="indexfooter">
+        Copyright &copy; Community Science Museum
+    </footer>
+    <script src="script.js"></script>
 </body>
-<footer class="indexfooter">Copyright &copy; Community Science Museum</footer>
+<!--Moved </html> to it's proper position and moved footer into the Body tag, 
+    in the first delivery the tag was on the outside of the Body tag -->
+</html>

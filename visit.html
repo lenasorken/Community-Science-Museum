@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
     <meta name="description"
         content="The Community Science Museum is located at 2628 Richards Avenue, New York 10707. We're open all days. Opening hours Mondays - Thursdays are 10.00-16.00. Fridays we're open 10.00 - 16.00, and Saturdays and Sundays from 9.00 - 13.00." />
     <title>Community Science Museum | Visit</title>
-    <link href="/css/styles.css" rel="stylesheet" />
-    <link href="/css/visit.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/visit.css" rel="stylesheet" />
 
 </head>
 
@@ -18,68 +16,58 @@
     <header>
         <!---nav bar -->
         <nav>
-            <div class="navigation">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="../images/logo75px.png" alt="logo">
-                    </a>
-                </div>
-                <div class="logo_text">
-                    <a href="index.html">Community Science Museum</a>
-                </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo75px.png" alt="logo">
+                </a>
+            </div>
+            <div class="logo_text">
+                <a href="index.html">Community Science Museum</a>
+            </div>
 
-
-                <ul class="navigation_links">
-                    <li><a href="explore.html">
-                            <p>Explore</p>
-                        </a> </li>
-                    <li><a href="exhibitionspaces.html">
-                            <p>Exhibition Spaces</p>
-                        </a> </li>
-                    <li><a href="specialevents.html">
-                            <p>Special Events</p>
-                        </a> </li>
-                    <li><a href="visit.html"></a>
-                        <h5>Visit</h5></a>
-                    </li>
-                    <li><a href="get involved.html">
-                            <p>Get Involved</p>
-                        </a> </li>
-                </ul>
+            <ul class="navigation_links">
+                <li><a href="explore.html">Explore</a> </li>
+                <li><a href="exhibitionspaces.html">Exhibition Spaces</a> </li>
+                <li><a href="specialevents.html">Special Events</a> </li>
+                <li><a href="visit.html">Visit</a> </li>
+                <li><a href="get involved.html">Get Involved</a> </li>
+            </ul>
+            <!--  Added Hamburger Menu
+                  Changes are visible during mobile view only
+                  Image is hidden with CSS when from 1200px width and upwards. -->
+            <div class="mobile-nav">
+                <img src="images/hamburger.png" alt="hamburger" id="hamburger">
+                <div id="mobile-nav-links">
+                    <a href="explore.html">Explore</a>
+                    <a href="exhibitionspaces.html">Exhibition Spaces</a>
+                    <a href="specialevents.html">Special Events</a>
+                    <a href="visit.html">Visit</a>
+                    <a href="get involved.html">Get Involved</a>
+                </div>
             </div>
         </nav>
-        </div>
 
         <!---nav bar -->
+        <!--Removed unecessary code and made some global tags to avoid repeats
+        All <br> are removed and replaced with margin-top where the space is needed as stated in the feedback.
+        Some cleanup in code is also done.-->
     </header>
-
-    <div class="pageimg">
-    </div>
-
-    <div class="headerimg">
-        <div class="visitheaderimg">
-        </div>
-        <div class="headertext">
-            <h1>Visit</h1>
-        </div>
-    </div>
-    <br>
-    <br>
     <section class="shortened_visit">
-        <img src="../images/library-1132573_1920.png" alt="library" class="libraryimg">
-        <div class="visit_text">
+        <img src="images/library-1132573_1920.png" alt="library" class="libraryimg">
+        <div class="museum_text">
+            <h1 id="museum-h1">Visit</h1>
             <h2>Location</h2>
             <p>The museum is located at 2628 Richards Avenue,
                 New York 10707
             </p>
-            <br>
+
             <h2>Admission</h2>
             <p>The entrance is free for all.
                 There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and
                 include a handy printed guide of the museum.
                 If you would like to organise a guided tour for your group of 6 or more people, please contact us to
                 arrange the tour.</p>
-            <br>
+                
             <h2>Hours</h2>
             <p>Monday: Closed</p>
             <p>Tuesday: 10:00 – 16:00</p>
@@ -88,20 +76,27 @@
             <p>Friday: 10:00 – 19:00</p>
             <p>Saturday: 9:00 – 16:00</p>
             <p>Sunday: 9:00 – 13:00</p>
-            <br>
+            
             <h2>Accessibility</h2>
             <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the
                 visually impaired.</p>
-            <br>
+                
             <h2>Food and drink</h2>
             <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and
                 more.</p>
-            <br>
+                
             <h2>Shop</h2>
             <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that
                 allow you to continue to explore science even after you’ve left the museum.</p>
+
     </section>
     </div>
     <br>
+    <footer>
+        Copyright &copy; Community Science Museum
+    </footer>
+    <script src="script.js"></script>
 </body>
-<footer>Copyright &copy; Community Science Museum</footer>
+<!--Moved </html> to it's proper position and moved footer into the Body tag, 
+    in the first delivery the tag was on the outside of the Body tag -->
+</html>

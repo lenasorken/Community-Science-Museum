@@ -1,84 +1,92 @@
-@media only screen and (max-width: 600px) {
-    .navigation {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 8vh;
-        background-color: #F7F7F7;
-        box-shadow: 0px 1px 7px grey; 
-    }
+@media only screen and (max-width: 700px) {
+
+    /* Added Hamburger Menu styling and hiding the desktop nav bar. 
+       Rewrote the Media Query as the previous one didn't do the job properly with the new hamburger menu
+       Rewritten media query now works for Laptop aswell, due to some issues stated in the feedback. */
 
     .logo_text {
-        font-size: 15px;
-        margin-left: 10px;
+        font-size: 90%;
+        margin-right: auto;
+        margin-left: 5%;
+        width: 50%;
     }
     
     .logo {
-        height: auto;
-        width: auto;
-        left: 0;
-        top: 0;
-        margin-left: 320px;
+        justify-content: center;
+        margin-top: 1%;
+        margin-left: 10%;
     }
-    
+
     .navigation_links {
-        display: flex;
-        text-align: right;
-        flex-direction: column;
-        justify-content: space-around;
-        position: absolute;
-        font-size: 5px;
-        margin-left: 150px;
-    }
-
-    .navigation_links p {
-        font-size: 10px;
-    }
-
-    .navigation_links h5 {
-        text-decoration: solid;
-        font-size: 15px;
-    }
-
-    .navigation_links li {
-        list-style: none;
-        font-size: 5px;
-    }
-    
-    .pageimg {
         display: none;
     }
+
+    .mobile-nav {
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #mobile-nav-links {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        position: absolute;
+        margin-top: 1%;
+        right: 0;
+        top: 0;
+    }
+
+    #hamburger:active {
+        width: 40%;
+        position: relative;
+        border: solid 2px black;
+        margin: auto;
+        margin-top: 10%;
+        margin-right: 10%;
+    }
+
+    #mobile-nav-links {
+        display: flex;
+        border: solid 2px black;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    #mobile-nav-links > a:active {
+        background-color: rgb(184, 186, 189);
+        text-decoration: none;
+        width: 100%;
+    }
+
+    #mobile-nav-links > a {
+        margin-top: 15%;
+        font-size: 26px;
+        margin-left: 2%;
+        text-decoration: none;
+    }
+
+    #hamburger {
+        display: flex;
+        width: 40%;
+        border: solid 1px black;
+        position: relative;
+        margin: auto;
+        margin-top: 10%;
+        margin-right: 10%;
+        cursor: pointer;
+    }
+    
     .headerimg {
         display: none;
     }
-    
-}
 
-@media only screen and (max-width: 600px) {
-    .visit_text {
-        max-width: 250px;
-        font-size: 12px;
-        line-height: 200%;
-        margin-left: 10px;
-    }
-    
-    .libraryimg {
-        display: none;
-    }
-    
-    .visitheaderimg {
-        display: none;
-    }
-    footer {
-        background-color: #F7F7F7;
-        padding: 20px 10px;
-        font-size: 10px;
-    }
-}
-
-@media only screen and (min-height: 600px) and (max-height: 850px) {
-    .visit_text {
-        max-width: 300px;
+    .museum_text {
+        max-width: 90%;
         font-size: 1em;
         line-height: auto;
     }
@@ -86,13 +94,102 @@
     .libraryimg {
         display: none;
     }
+
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  
+    .logo_text {
+        font-size: 90%;
+        margin-right: auto;
+        margin-left: 5%;
+        width: 50%;
+    }
     
-    .visitheaderimg {
+    .logo {
+        justify-content: center;
+        margin-top: 1%;
+        margin-left: 10%;
+    }
+
+    .navigation_links {
         display: none;
     }
-    footer {
-        background-color: #F7F7F7;
-        padding: 20px 10px;
-        font-size: 12px;
+
+    .mobile-nav {
+        display: block;
+        overflow: hidden;
+        position: relative;
     }
+
+    #mobile-nav-links {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        position: absolute;
+        margin-top: 1%;
+        right: 0;
+        top: 0;
+    }
+
+    #hamburger:active {
+        width: 40%;
+        position: relative;
+        border: solid 2px black;
+        margin: auto;
+        margin-top: 10%;
+        margin-right: 10%;
+    }
+
+    #mobile-nav-links {
+        display: flex;
+        border: solid 2px black;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    #mobile-nav-links > a:active {
+        background-color: rgb(184, 186, 189);
+        text-decoration: none;
+        width: 100%;
+    }
+
+    #mobile-nav-links > a {
+        margin-top: 15%;
+        font-size: 26px;
+        margin-left: 2%;
+        text-decoration: none;
+    }
+
+    #hamburger {
+        display: flex;
+        width: 40%;
+        border: solid 1px black;
+        position: relative;
+        margin: auto;
+        margin-top: 10%;
+        margin-right: 10%;
+        cursor: pointer;
+    }
+
+    .headerimg {
+        display: none;
+    }
+
+    .museum_text {
+        max-width: 80%;
+        font-size: 1em;
+        line-height: auto;
+    }
+
+    .libraryimg {
+        display: none;
+    }
+
 }

@@ -7,7 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.navigation {
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,6 +29,14 @@ a:link {
 a:visited {
     text-decoration: none;
     color: #000000;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+#mobile-nav-links {
+    display: none;
 }
 
 .logo_text a:hover {
@@ -58,18 +66,6 @@ a:visited {
 
 .navigation_links li {
     list-style: none;
-}
-
-.navigation_links p {
-    color: #000000;
-    text-decoration: none;
-    font-size: 19px;
-}
-
-.navigation_links h5 {
-    color: #3a3a3a;
-    text-decoration: solid;
-    font-size: 21px;
 }
 
 .hamburger_bar {
@@ -139,7 +135,7 @@ footer {
 }
 
 .exploreheaderimg {
-    background-image: url(/images/learn-2405206_1920.png);
+    background-image: url(../images/learn-2405206_1920.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -178,7 +174,7 @@ footer {
 }
 
 .exhibitionheaderimg {
-    background-image: url(/images/skeleton-414543_1920.png);
+    background-image: url(../images/skeleton-414543_1920.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -192,7 +188,7 @@ footer {
 /* -----Special Events ----- */
 
 .specialeventsheaderimg {
-    background-image: url(/images/billetto-editorial-334686\ -\ Copy.png);
+    background-image: url(../images/billetto-editorial-334686\ -\ Copy.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -229,7 +225,7 @@ footer {
     
 /* -----Visit CSS----- */
 
-.visit_text {
+.museum_text {
     max-width: 40%;
     font-size: 1em;
     line-height: auto;
@@ -247,13 +243,19 @@ footer {
     opacity: 70%;
 }
 
-.shortened_visit > .visit_text {
+.shortened_visit > .museum_text {
     flex: 2 0 0%;
     margin: auto;
 }
 
+#museum-h1 {
+    font-size: 2em;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
 .visitheaderimg {
-    background-image: url(/images/william-bout-264826_2.png);
+    background-image: url(../images/william-bout-264826_2.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -287,13 +289,17 @@ footer {
     opacity: 85%
 }
 
+.shortened-involved {
+    display: flex;
+}
+
 .shortened_involved > .involved_text {
     flex: 2 0 0%;
     margin: auto;
 }
 
 .getinvolvedheaderimg {
-    background-image: url(/images/scientific-2040795_1280_2.png);
+    background-image: url(../images/scientific-2040795_1280_2.png);
     height: 310px;
     width: auto;
     background-repeat: no-repeat;
@@ -320,7 +326,7 @@ footer {
 
 .background {
     height: 100vh;
-    background-image: url(/images/jesse-orrico-60373_2.png);
+    background-image: url(../images/jesse-orrico-60373_2.png);
 }
 
 .index_text {
